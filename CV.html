@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Curriculum Vitae</title>
+</head>
+<body>
+    <article>
+    <center>
+            <h1>Curriculum Vitae</h1>
+        <form action="#" method="GET">
+            <section>
+                <fieldset>
+                    <legend>Personal Data</legend>
+                    <label id="dui">DUI:</label>
+                    <input type="text" id="dui" placeholder="04813412-8" pattern="[0-9]{8}[\-][0-9]{1}" required >
+                    <label id="nombre">First Name:</label>
+                    <input type="text" id="nombre" placeholder="Juanito" required>
+                    <label id="apellido">Last Name:</label>
+                    <input type="text" id="apellido" placeholder="Pérez" required>
+                    <label id="genero">Gender:</label>
+                    <input type="radio" id="genero" name="gender" value="M" required>M
+                    <input type="radio" id="genero" name="gender" value="F" required>F
+                    <br>
+                    <label id="contacto">Contact Number:</label>
+                    <input type="text" id="contacto"  placeholder="7967-7413" pattern="[0-9]{4}[\-][0-9]{4}" required>
+                    <label id="anio">Birthdate:</label>
+                    <input type="date" id="anio" min="2000-01-01" max="2018-12-31" required>
+                    <label id="estado">Civil Status:</label>
+                    <select id="estado">
+                        <option>Single</option>
+                        <option>Married</option>
+                    </select>
+                    <label id="imagen">Image:</label>
+                    <input type="file" id="imagen">
+                </fieldset>
+        </section>
+        <br>
+        <section>
+            <fieldset>
+                <legend>Work Experience</legend>
+                <textarea placeholder="Experience" style="width: 100%" required></textarea>
+            </fieldset>
+        </section>
+        <br>
+        <section>
+            <fieldset>
+                <legend>Academic Training</legend>
+                <textarea placeholder="Academic Training" style="width: 100%" required></textarea>
+            </fieldset>
+        </section>
+        <br>
+    </center>
+        <aside>
+            <fieldset>
+                <legend>Further Training</legend>
+                <fieldset>
+                    <legend>Programming Languages</legend>
+                    <input type="checkbox" name="leng">Java
+                    <input type="checkbox" name="leng">C#
+                    <input type="checkbox" name="leng">Phyton
+                    <input type="checkbox" name="leng">C++
+                    <input type="checkbox" name="leng">Ruby
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Web Technologies</legend>
+                    <input type="checkbox" name="web">HTML5
+                    <input type="checkbox" name="web">CSS/CSS3
+                    <input type="checkbox" name="web">Materialize CSS
+                    <input type="checkbox" name="web">JavaScript
+                    <input type="checkbox" name="web">Node.js
+                    <input type="checkbox" name="web">Spring MVC
+                    </fieldset>
+            </fieldset>
+        </aside>
+        <br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Cancel">
+        </form>
+    
+    </article>
+</body>
+</html>
